@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando tabelas</title>
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Mapa_dos_estados_brasileiros_por_popula%C3%A7%C3%A3o_%282022%29.svg/420px-Mapa_dos_estados_brasileiros_por_popula%C3%A7%C3%A3o_%282022%29.svg.png" type="image/x-icon">
+    <style>
+
+        td:hover, th:hover {
+            text-decoration: underline;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        tbody > tr:nth-child(odd) {
+            background-color: rgb(0, 183, 255);
+            font-weight: bolder;
+        }
+        tbody > tr:nth-child(even) {
+            background-color: blueviolet;
+            text-decoration: underline;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 0.3em;
+        }
+        thead, tfoot {
+            background-color: rgb(62, 62, 62);
+            color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            background-color: rgb(62, 62, 62);
+            top: 0;
+        }
+        td.num, th.num {
+            text-align: right;
+        }
+        caption {
+            background-color: darkgray;
+            height: 25px;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Anatomia para tabelas grandes</h1>
+
+    <table>
+        <caption>População por estados</caption>
+        <thead>
+            <tr>
+                <th>ESTADO</th>
+                <th style="width: 50px;">POPULAÇÃO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 000 000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">22 000 000</td>
+            </tr>
+            <tr>
+                <td>Riio de Janeiro</td>
+                <td class="num">18 000 000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total habitantes</th>
+                <th class="num"><strong>85 000 000</strong></th>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quasi amet placeat id, odio quaerat fugiat adipisci harum nam nulla consectetur saepe ut similique, dolore voluptas praesentium dicta sapiente debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad necessitatibus quaerat est tempore blanditiis nulla nesciunt dicta! Debitis minima iste doloribus quam nesciunt, quos cumque hic earum a. Molestiae, voluptatibus.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique vitae et, sunt sapiente explicabo illum debitis rerum, rem nisi vero, a laborum error repudiandae ducimus ratione voluptatem facere cum atque.
+    </p>  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quasi amet placeat id, odio quaerat fugiat adipisci harum nam nulla consectetur saepe ut similique, dolore voluptas praesentium dicta sapiente debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad necessitatibus quaerat est tempore blanditiis nulla nesciunt dicta! Debitis minima iste doloribus quam nesciunt, quos cumque hic earum a. Molestiae, voluptatibus.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique vitae et, sunt sapiente explicabo illum debitis rerum, rem nisi vero, a laborum error repudiandae ducimus ratione voluptatem facere cum atque.
+    </p> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quasi amet placeat id, odio quaerat fugiat adipisci harum nam nulla consectetur saepe ut similique, dolore voluptas praesentium dicta sapiente debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad necessitatibus quaerat est tempore blanditiis nulla nesciunt dicta! Debitis minima iste doloribus quam nesciunt, quos cumque hic earum a. Molestiae, voluptatibus.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique vitae et, sunt sapiente explicabo illum debitis rerum, rem nisi vero, a laborum error repudiandae ducimus ratione voluptatem facere cum atque.
+    </p> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quasi amet placeat id, odio quaerat fugiat adipisci harum nam nulla consectetur saepe ut similique, dolore voluptas praesentium dicta sapiente debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad necessitatibus quaerat est tempore blanditiis nulla nesciunt dicta! Debitis minima iste doloribus quam nesciunt, quos cumque hic earum a. Molestiae, voluptatibus.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique vitae et, sunt sapiente explicabo illum debitis rerum, rem nisi vero, a laborum error repudiandae ducimus ratione voluptatem facere cum atque.
+    </p> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quasi amet placeat id, odio quaerat fugiat adipisci harum nam nulla consectetur saepe ut similique, dolore voluptas praesentium dicta sapiente debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad necessitatibus quaerat est tempore blanditiis nulla nesciunt dicta! Debitis minima iste doloribus quam nesciunt, quos cumque hic earum a. Molestiae, voluptatibus.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique vitae et, sunt sapiente explicabo illum debitis rerum, rem nisi vero, a laborum error repudiandae ducimus ratione voluptatem facere cum atque.
+    </p>vvvvv <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quasi amet placeat id, odio quaerat fugiat adipisci harum nam nulla consectetur saepe ut similique, dolore voluptas praesentium dicta sapiente debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad necessitatibus quaerat est tempore blanditiis nulla nesciunt dicta! Debitis minima iste doloribus quam nesciunt, quos cumque hic earum a. Molestiae, voluptatibus.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique vitae et, sunt sapiente explicabo illum debitis rerum, rem nisi vero, a laborum error repudiandae ducimus ratione voluptatem facere cum atque.
+    </p> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quasi amet placeat id, odio quaerat fugiat adipisci harum nam nulla consectetur saepe ut similique, dolore voluptas praesentium dicta sapiente debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad necessitatibus quaerat est tempore blanditiis nulla nesciunt dicta! Debitis minima iste doloribus quam nesciunt, quos cumque hic earum a. Molestiae, voluptatibus.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique vitae et, sunt sapiente explicabo illum debitis rerum, rem nisi vero, a laborum error repudiandae ducimus ratione voluptatem facere cum atque.
+    </p> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quasi amet placeat id, odio quaerat fugiat adipisci harum nam nulla consectetur saepe ut similique, dolore voluptas praesentium dicta sapiente debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad necessitatibus quaerat est tempore blanditiis nulla nesciunt dicta! Debitis minima iste doloribus quam nesciunt, quos cumque hic earum a. Molestiae, voluptatibus.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique vitae et, sunt sapiente explicabo illum debitis rerum, rem nisi vero, a laborum error repudiandae ducimus ratione voluptatem facere cum atque.
+    </p> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quasi amet placeat id, odio quaerat fugiat adipisci harum nam nulla consectetur saepe ut similique, dolore voluptas praesentium dicta sapiente debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad necessitatibus quaerat est tempore blanditiis nulla nesciunt dicta! Debitis minima iste doloribus quam nesciunt, quos cumque hic earum a. Molestiae, voluptatibus.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique vitae et, sunt sapiente explicabo illum debitis rerum, rem nisi vero, a laborum error repudiandae ducimus ratione voluptatem facere cum atque.
+    </p> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quasi amet placeat id, odio quaerat fugiat adipisci harum nam nulla consectetur saepe ut similique, dolore voluptas praesentium dicta sapiente debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad necessitatibus quaerat est tempore blanditiis nulla nesciunt dicta! Debitis minima iste doloribus quam nesciunt, quos cumque hic earum a. Molestiae, voluptatibus.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique vitae et, sunt sapiente explicabo illum debitis rerum, rem nisi vero, a laborum error repudiandae ducimus ratione voluptatem facere cum atque.
+    </p> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quasi amet placeat id, odio quaerat fugiat adipisci harum nam nulla consectetur saepe ut similique, dolore voluptas praesentium dicta sapiente debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad necessitatibus quaerat est tempore blanditiis nulla nesciunt dicta! Debitis minima iste doloribus quam nesciunt, quos cumque hic earum a. Molestiae, voluptatibus.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique vitae et, sunt sapiente explicabo illum debitis rerum, rem nisi vero, a laborum error repudiandae ducimus ratione voluptatem facere cum atque.
+    </p> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quasi amet placeat id, odio quaerat fugiat adipisci harum nam nulla consectetur saepe ut similique, dolore voluptas praesentium dicta sapiente debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad necessitatibus quaerat est tempore blanditiis nulla nesciunt dicta! Debitis minima iste doloribus quam nesciunt, quos cumque hic earum a. Molestiae, voluptatibus.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique vitae et, sunt sapiente explicabo illum debitis rerum, rem nisi vero, a laborum error repudiandae ducimus ratione voluptatem facere cum atque.
+    </p> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quasi amet placeat id, odio quaerat fugiat adipisci harum nam nulla consectetur saepe ut similique, dolore voluptas praesentium dicta sapiente debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad necessitatibus quaerat est tempore blanditiis nulla nesciunt dicta! Debitis minima iste doloribus quam nesciunt, quos cumque hic earum a. Molestiae, voluptatibus.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique vitae et, sunt sapiente explicabo illum debitis rerum, rem nisi vero, a laborum error repudiandae ducimus ratione voluptatem facere cum atque.
+    </p> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quasi amet placeat id, odio quaerat fugiat adipisci harum nam nulla consectetur saepe ut similique, dolore voluptas praesentium dicta sapiente debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad necessitatibus quaerat est tempore blanditiis nulla nesciunt dicta! Debitis minima iste doloribus quam nesciunt, quos cumque hic earum a. Molestiae, voluptatibus.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique vitae et, sunt sapiente explicabo illum debitis rerum, rem nisi vero, a laborum error repudiandae ducimus ratione voluptatem facere cum atque.
+    </p> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quasi amet placeat id, odio quaerat fugiat adipisci harum nam nulla consectetur saepe ut similique, dolore voluptas praesentium dicta sapiente debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad necessitatibus quaerat est tempore blanditiis nulla nesciunt dicta! Debitis minima iste doloribus quam nesciunt, quos cumque hic earum a. Molestiae, voluptatibus.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique vitae et, sunt sapiente explicabo illum debitis rerum, rem nisi vero, a laborum error repudiandae ducimus ratione voluptatem facere cum atque.
+    </p> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quasi amet placeat id, odio quaerat fugiat adipisci harum nam nulla consectetur saepe ut similique, dolore voluptas praesentium dicta sapiente debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad necessitatibus quaerat est tempore blanditiis nulla nesciunt dicta! Debitis minima iste doloribus quam nesciunt, quos cumque hic earum a. Molestiae, voluptatibus.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique vitae et, sunt sapiente explicabo illum debitis rerum, rem nisi vero, a laborum error repudiandae ducimus ratione voluptatem facere cum atque.
+    </p> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quasi amet placeat id, odio quaerat fugiat adipisci harum nam nulla consectetur saepe ut similique, dolore voluptas praesentium dicta sapiente debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad necessitatibus quaerat est tempore blanditiis nulla nesciunt dicta! Debitis minima iste doloribus quam nesciunt, quos cumque hic earum a. Molestiae, voluptatibus.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique vitae et, sunt sapiente explicabo illum debitis rerum, rem nisi vero, a laborum error repudiandae ducimus ratione voluptatem facere cum atque.
+    </p> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quasi amet placeat id, odio quaerat fugiat adipisci harum nam nulla consectetur saepe ut similique, dolore voluptas praesentium dicta sapiente debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad necessitatibus quaerat est tempore blanditiis nulla nesciunt dicta! Debitis minima iste doloribus quam nesciunt, quos cumque hic earum a. Molestiae, voluptatibus.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique vitae et, sunt sapiente explicabo illum debitis rerum, rem nisi vero, a laborum error repudiandae ducimus ratione voluptatem facere cum atque.
+    </p> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quasi amet placeat id, odio quaerat fugiat adipisci harum nam nulla consectetur saepe ut similique, dolore voluptas praesentium dicta sapiente debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad necessitatibus quaerat est tempore blanditiis nulla nesciunt dicta! Debitis minima iste doloribus quam nesciunt, quos cumque hic earum a. Molestiae, voluptatibus.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique vitae et, sunt sapiente explicabo illum debitis rerum, rem nisi vero, a laborum error repudiandae ducimus ratione voluptatem facere cum atque.
+    </p> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quasi amet placeat id, odio quaerat fugiat adipisci harum nam nulla consectetur saepe ut similique, dolore voluptas praesentium dicta sapiente debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad necessitatibus quaerat est tempore blanditiis nulla nesciunt dicta! Debitis minima iste doloribus quam nesciunt, quos cumque hic earum a. Molestiae, voluptatibus.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique vitae et, sunt sapiente explicabo illum debitis rerum, rem nisi vero, a laborum error repudiandae ducimus ratione voluptatem facere cum atque.
+    </p> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quasi amet placeat id, odio quaerat fugiat adipisci harum nam nulla consectetur saepe ut similique, dolore voluptas praesentium dicta sapiente debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad necessitatibus quaerat est tempore blanditiis nulla nesciunt dicta! Debitis minima iste doloribus quam nesciunt, quos cumque hic earum a. Molestiae, voluptatibus.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique vitae et, sunt sapiente explicabo illum debitis rerum, rem nisi vero, a laborum error repudiandae ducimus ratione voluptatem facere cum atque.
+    </p> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quasi amet placeat id, odio quaerat fugiat adipisci harum nam nulla consectetur saepe ut similique, dolore voluptas praesentium dicta sapiente debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad necessitatibus quaerat est tempore blanditiis nulla nesciunt dicta! Debitis minima iste doloribus quam nesciunt, quos cumque hic earum a. Molestiae, voluptatibus.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique vitae et, sunt sapiente explicabo illum debitis rerum, rem nisi vero, a laborum error repudiandae ducimus ratione voluptatem facere cum atque.
+    </p>
+</body>
+</html>
